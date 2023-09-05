@@ -13,6 +13,7 @@ data = urlopen(url)
 # from url in data
 data_json = json.loads(data.read())
 
-  
-# print the json response
-print(data_json)
+# print json response id 1
+for i in data_json:
+    if (i['id'] == 1):
+      print(i)
